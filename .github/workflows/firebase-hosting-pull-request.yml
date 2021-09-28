@@ -15,10 +15,6 @@ jobs:
       - name: Building the project
       - run: npm run build
       - uses: actions/checkout@v2
-<<<<<<< HEAD
-=======
-      - run: npm install && npm run generate --fail-on-error
->>>>>>> d35d304e409d0758f854e518f8ae31a7e775de13
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
